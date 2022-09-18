@@ -7,7 +7,7 @@ Section 21 covered:
 - [x] Adding Pagination Links
 - [x] Retrieving a Chunk of Data
 - [x] Preparing Pagination Data on the Server
-- [ ] Adding Dynamic Pagination Buttons
+- [x] Adding Dynamic Pagination Buttons
 - [ ] Re-Using the Pagination Logic & Controls
 
 
