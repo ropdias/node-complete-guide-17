@@ -122,7 +122,6 @@ app.use((error, req, res, next) => {
   // res.redirect("/500"); // This can lead to infinite loop if you thrown an Error in SYNC code
   // We can also render a page here or return some JSON data here
   // res.status(error.httpStatusCode).render(...);
-  console.log(error);
   res.status(500).render("500", {
     pageTitle: "Error!",
     path: "/500",
