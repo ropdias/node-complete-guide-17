@@ -9,6 +9,10 @@ const Order = require("../models/order");
 const ITEMS_PER_PAGE = 2;
 
 exports.getProducts = (req, res, next) => {
+  // Importante note:
+  // countDocuments() does not retrieve all documents, it only counts them which is faster than retrieving them.
+  // skip() and limit() are managed by MongoDB in a way that you only transfer the items over the wire which you 
+  // really need. It's not doing some server side filtering of the data, it really filters it on the database server already.
   const page = +req.query.page || 1;
   let totalItems;
 
@@ -58,6 +62,10 @@ exports.getProduct = (req, res, next) => {
 };
 
 exports.getIndex = (req, res, next) => {
+  // Importante note:
+  // countDocuments() does not retrieve all documents, it only counts them which is faster than retrieving them.
+  // skip() and limit() are managed by MongoDB in a way that you only transfer the items over the wire which you 
+  // really need. It's not doing some server side filtering of the data, it really filters it on the database server already.
   const page = +req.query.page || 1;
   let totalItems;
 
