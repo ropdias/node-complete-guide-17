@@ -4,7 +4,7 @@ Examples from the **"Section 21: Adding Pagination"** of the course **"NodeJS - 
 
 Section 21 covered:
 
-- [ ] Adding Pagination Links
+- [x] Adding Pagination Links
 - [ ] Retrieving a Chunk of Data
 - [ ] Preparing Pagination Data on the Server
 - [ ] Adding Dynamic Pagination Buttons
