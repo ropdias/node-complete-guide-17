@@ -87,7 +87,6 @@ app.use(errorControler.get404);
 // But there is the special type of middleware called "error handling middleware" with 4 arguments that Express will
 // move right away to it when you can next() with an Error inside:
 app.use((error, req, res, next) => {
-  console.log(error);
   // res.redirect("/500"); // This can lead to infinite loop if you thrown an Error in SYNC code
   // We can also render a page here or return some JSON data here
   // res.status(error.httpStatusCode).render(...);
